@@ -26,6 +26,6 @@ public static void main(String [] args)
 	 	else if((bmi>=25)&&(bmi<30))
 	 		System.out.println("Sei sovrappeso");
 	 	else
-	 		System.out.println("Seo obeso");
+	 		System.out.println("Sei obeso");
 	}
 }	

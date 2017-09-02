@@ -25,4 +25,4 @@ public static void main(String [] args)
 		intscarafaggi=String.valueOf(nscarafaggi).split("\\.")[0];
 		System.out.println("Dopo "+settimane+" settimane la casa (di "+metratura+" m^3) sarà completamente piena di scarafaggi, di numero "+ intscarafaggi+" con volume "+vscarafaggi+" m^3");
 	}
-}
+} 
