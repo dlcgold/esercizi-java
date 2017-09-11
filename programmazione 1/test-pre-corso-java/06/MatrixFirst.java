@@ -2,14 +2,12 @@ import java.util.Scanner;
 
 public class MatrixFirst
 {
+	public static final int r=10;
+	public static final int c=6;
+
 	public static void main(String [] args)
 	{
-		int r,c;
-		System.out.println("Inserire il numero di righe: ");
-		Scanner tastiera= new Scanner(System.in);
-		r=tastiera.nextInt();
-		//System.out.println("Inserire il numero di colonne: ");
-		c=6;
+		
 
 		int [][] matrice=new int[r][c];
 
@@ -20,12 +18,16 @@ public class MatrixFirst
 		System.out.println("Bilanci tassi d'interesse annuali, arrotondamento a valori interi di euro");
 		System.out.println();
 		System.out.println("Anni    5.00% 5.50% 6.00% 6.50% 7.00% 7.50%");
+		VisualizzaMatrice(matrice);
+	}
 
+	public static void VisualizzaMatrice(int[][] matrice)
+	{
 		for(int i=0;i<r;i++)
 		{
 			System.out.print((i+1)+"	");
 			for(int o=0;o<c;o++)
-				System.out.print("$"+matrice[i][o]+" ");
+				System.out.print("$"+ matrice[i][o]+" ");
 			System.out.println();
 		}
 	}
